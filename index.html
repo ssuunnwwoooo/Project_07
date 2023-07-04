@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./button.css">
+    <link rel="stylesheet" href="./css/button.css">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/slick.min.js"></script>
@@ -20,7 +20,7 @@
         <header class="header">
             <div class="header_wrap inner">
                 <h1 class="logo">
-                    <img src="./images/GNB_logo.png" alt="">
+                    <a href="/"><img src="./images/GNB_logo.png" alt=""></a>
                 </h1>
 
                 <nav class="gnb">
@@ -106,34 +106,40 @@
                         <p>버트너가 선정한 이 달의 메뉴입니다.</p>
                     </div>
 
-                    <div class="img_box">
+                    <div class="menu_box">
                         <figure>
                             <a href="">
-                                <img src="./images/mini1.png" alt="">
+                                <div class="img_box">
+                                    <img src="./images/mini1.png" alt="">
+                                </div>
+
+                                <h3 class="name">더블 초코 라떼</h3>
+                                <p>Double Chocolate Latte</p>
                             </a>
-                            <strong class="name">더블 초코 라떼</strong>
-                            <p>Double Chocolate Latte</p>
                         </figure>
                         <figure>
                             <a href="">
-                                <img src="./images/mini2.png" alt="">
+                                <div class="img_box"><img src="./images/mini2.png" alt=""></div>
+
+                                <h3 class="name">바닐라 라떼</h3>
+                                <p>Vanilla Latte</p>
                             </a>
-                            <strong class="name">바닐라 라떼</strong>
-                            <p>Vanilla Latte</p>
                         </figure>
-                        <figure class="bg">
+                        <figure>
                             <a href="">
-                                <img src="./images/mini3.png" alt="">
+                                <div class="img_box"><img class="bg" src="./images/mini3.png" alt=""></div>
+
+                                <h3 class="name">치킨 포테이토 세트</h3>
+                                <p>Chicken Potato Set</p>
                             </a>
-                            <strong class="name">치킨 포테이토 세트</strong>
-                            <p>Chicken Potato Set</p>
                         </figure>
-                        <figure class="bg">
+                        <figure>
                             <a href="">
-                                <img src="./images/mini4.png" alt="">
+                                <div class="img_box"><img class="bg" src="./images/mini4.png" alt=""></div>
+
+                                <h3 class="name">허니버터갈릭 감자튀김</h3>
+                                <p>Honey Butter Garlic French Fries</p>
                             </a>
-                            <strong class="name">허니버터갈릭 감자튀김</strong>
-                            <p>Honey Butter Garlic French Fries</p>
                         </figure>
                     </div>
                 </div>
@@ -144,7 +150,9 @@
                     <h2>새 영상설명 지원 게임</h2>
                     <div class="game_slide">
                         <div class="box box01">
-                            <h3>POWER GRID</h3>
+                            <div class="title">
+                                <h3>POWER GRID</h3>
+                            </div>
                             <strong>파워그리드</strong>
                             <table>
                                 <tr>
@@ -157,7 +165,9 @@
                                 전략게임을 좋아한다면 레드버튼에서 파워그리드를!</p>
                         </div>
                         <div class="box box02">
-                            <h3>INGCAN GOLD</h3>
+                            <div class="title">
+                                <h3>INGCAN GOLD</h3>
+                            </div>
                             <strong>잉카의 황금</strong>
                             <table>
                                 <tr>
@@ -176,8 +186,9 @@
             <section class="main_store">
                 <div class="store_wrap inner">
                     <div class="txt_box">
-                        <h2>Feel redbutton closely</h2>
-                        <strong>매장을 쉽고 빠르게 찾아보세요.</strong>
+                        <h2><strong>FEEL REDBUTTOM CLOSELY</strong><br />
+                            매장을 쉽고 빠르게 찾아보세요.
+                        </h2>
                         <p>즐거움 가득한 레드버튼 매장을 미리 만나보세요!</p>
                         <a href="">매장 검색하기</a>
                     </div>
@@ -187,12 +198,14 @@
 
         <footer class="footer">
             <div class="ft_wrap inner">
-                <h2 class="logo"><img src="./images/footer_logo.png" alt=""></h2>
+                <h2 class="logo"><img src="./images/footer_logo.png" alt="">
+                </h2>
 
                 <ul class="ft_left">
-                    <li>주소 : 경기도 안양시 동안구 동편로 13번길 65, 넥스트아이빌딩 3층</li>
-                    <li>사업자번호 : 224-86-00895</li>
-                    <li>대표자 : 김동혁 · e-mail : info@redbutton.co.kr</li>
+                    <li><strong>주소</strong> : 경기도 안양시 동안구 동편로 13번길 65, 넥스트아이빌딩 3층</li>
+                    <li><strong>사업자번호</strong> : 224-86-00895 ,
+                        대표자 : 김동혁 · e-mail : info@redbutton.co.kr
+                    </li>
                     <li>COPYRIGHT &copy; Redbutton co.,Ltd. All rights reserved.</li>
                 </ul>
                 <div class="ft_right">
@@ -201,7 +214,16 @@
                         (주말, 공휴일 휴무)</p>
                 </div>
         </footer>
-    </div>
+
+        <div class="to_top">
+            <img src="./images/TOP_button.png" alt="">
+        </div>
+
+
+        <div class="mobile_btn">
+            <i class="xi-bars"></i>
+        </div>
+
     </div>
 </body>
 
