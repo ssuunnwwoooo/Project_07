@@ -140,7 +140,7 @@
 
 /* --------------------------- */
 
-.main_visua {
+.main_visual {
     position: relative;
 }
 
@@ -333,7 +333,7 @@
 /* --------------------------------------- */
 
 .main_game {
-    background: #303036;
+    background: #2E2D35;
 }
 
 .main_game h2 {
@@ -378,11 +378,11 @@
 }
 
 .main_game .game_slide .box01 {
-    background: url(/images/131313.png) no-repeat right 100px center;
+    background: url(/images/game01.jpg) no-repeat center center/cover;
 }
 
 .main_game .game_slide .box02 {
-    background: url(/images/1231311.png) no-repeat right center;
+    background: url(/images/game02.jpg) no-repeat center center/cover;
 }
 
 /* ----------------------------------------------- */
@@ -573,13 +573,7 @@
         padding: 10px 0;
     }
 
-    .header_wrap {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #ddd;
-        cursor: pointer;
-    }
+    .header_wrap {}
 
     .header .logo {
         position: relative;
@@ -589,12 +583,12 @@
 
     .gnb {
         position: fixed;
-        top: -50px;
+        top: 0;
         bottom: 0;
         left: 0;
         width: 100%;
         height: 100vh;
-        background: #0e0d0c;
+        background: #292420;
 
         opacity: 0;
         transition: 0.5s;
@@ -617,56 +611,42 @@
 
     .header .gnb>ul>li {
         position: relative;
-        padding: 0 50px;
+
+        padding: 20px 50px;
     }
 
+    .header .gnb>ul>li>a {
+        display: block;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.5);
+    }
+
+
     .header .sub {
-        position: absolute;
-        overflow: hidden;
-
-        top: 150px;
-        left: 50%;
-        height: 200px;
-        transform: translate(-50%, 0);
-        z-index: 999;
-
-        text-align: center;
-        width: 100%;
-        line-height: 35px;
-
-        opacity: 0;
-        transition: 0.5s;
-
-        font-size: 17px;
-        font-style: normal;
-        font-weight: 300;
-
-        color: rgba(221, 221, 221, 0.644);
-
-        /* b */
-
-
         position: static;
         transform: translate(0, 0);
-        background: #494949;
-        width: auto;
+        background: #3d3735;
         text-align: left;
         padding: 0;
-        border-radius: 0;
 
+        height: 100%;
         opacity: 1;
         visibility: visible;
         transition: none;
 
+        display: none;
     }
 
-    .header .sub>li:hover {
-        color: #ddd;
-        font-weight: 500;
+    .header .gnb>li:hover .sub {
+        opacity: 1;
+        display: none;
+    }
+
+    .header .sub li {
+        padding: 10px 30px;
     }
 
     .header .sub li~li {
-        border-top: 1px solid #ddd;
+        border-top: 1px solid rgb(0, 0, 0, 0.5);
     }
 
     .header .sub a {
@@ -676,11 +656,22 @@
         line-height: 40px;
     }
 
-    .header .link {}
+    /* --------------------------------------- */
 
-    .header .link p {
-        display: none;
+    .header .link {
+        position: sticky;
+        margin: 0 auto;
+        align-items: center;
+        gap: 20px;
+        transition: 0.5s;
+        color: #ddd;
     }
+
+    .header.on .link {
+        opacity: 1;
+    }
+
+    .header .link p {}
 
     .header .link p:hover::before {
         width: 0;
@@ -688,35 +679,31 @@
 
     /* --------------------------- */
 
-    .main_visua {}
-
-    .main_visual .main_slide {
+    .main_visual {
+        border: 1px solid red;
         overflow: hidden;
     }
 
-    .main_slide .itm {
-        position: relative;
-        height: auto;
+    .main_visual .main_slide .itm {
+        max-height: 100%;
         max-width: 100%;
+        object-fit: cover;
     }
 
-    /* 사진 작은 화면에 다 ㄴㅏ오게 하기 */
-
-
     .main_visual .main_slide .itm01 {
-        background: url(/images/MAIN1-scaled.jpg) no-repeat center center/cover;
+        background: url(/images/main_slide-1.jpg) no-repeat center center/cover;
 
     }
 
     .main_visual .main_slide .itm02 {
-        background: url(/images/MAIN2.jpg) no-repeat center center/cover;
+        background: url(/images/main_slide-2.jpg) no-repeat center center/cover;
     }
-
 
 
     /* -------------------------- */
 
     .main_visual .slick-dots {
+        border: 1px solid blue;
         position: absolute;
         bottom: 50px;
         right: 40%;
@@ -765,12 +752,14 @@
         line-height: 24px;
         letter-spacing: -0.48px;
         bottom: 10px;
-        right: 35%;
+        right: 0;
         background: #ffffff00;
         border: 1px solid #000;
 
         color: #000;
         padding: 10px 20px 10px 20px;
+
+        transform: translate(-130%, 0);
     }
 
     /* ------------------------------------ */
@@ -795,47 +784,54 @@
 
     .main_menu .menu_box p {
         font-size: 15px;
+        word-break: keep-all;
     }
 
     /* --------------------------------------- */
 
 
     .main_game h2 {
-        font-size: 15px;
-        padding: 50px 0 0 0;
+        display: none;
     }
 
     .main_game .game_slide .box01 {
-        background: url(/images/131313.png) no-repeat center center;
-        width: 50px;
-        height: 50px;
+        background: url(/images/mobile_game01.jpg) no-repeat center center/cover;
     }
 
     .main_game .game_slide .box02 {
-        background: url(/images/1231311.png) no-repeat center center;
-
+        background: url(/images/mobile_game02.jpg) no-repeat center center/cover;
     }
 
-
-    .main_game .game_slide {
-        padding: 0 0 60px 0;
+    /* 
+    .main_game .game_slide .box01 {
+        background: url(/images/game02.PNG) no-repeat top / 70%;
     }
+
+    .main_game .game_slide .box02 {
+        background: url(/images/game01.PNG) no-repeat top/ 70%;
+    }
+ */
+    .main_game .game_slide {}
 
     .main_game .game_slide .box {
-        padding: 180px 0;
+        padding: 0 0 50px 0;
     }
-
 
 
     .main_game .game_slide .box h3 {
-        font-size: 60px;
+        font-size: 30px;
         color: #dcba94;
+        text-align: center;
+        margin: 300px 0 0 0;
     }
 
     .main_game .game_slide .box strong {
-        font-size: 30px;
+        display: block;
+        font-size: 20px;
         font-weight: 600;
         color: #dcba94;
+        text-align: center;
+        margin: 0 0 30px 0;
     }
 
     .main_game .game_slide table {
@@ -844,8 +840,9 @@
 
     .main_game .game_slide p {
         color: #979ca1;
-        font-size: 18px;
-        line-height: 30px;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
     }
 
 
@@ -855,14 +852,14 @@
     .main_game .slick-dots {
         position: absolute;
         bottom: 50px;
-        left: 2%;
-        transform: translate(-50%, 0);
+        left: 0;
+        transform: translate(180px, 0);
         z-index: 999;
     }
 
     .main_game .slick-dots>li {
         display: inline-block;
-        padding: 5px 0;
+        padding: 0px 0;
     }
 
     .main_game .slick-dots>li button {
@@ -897,8 +894,7 @@
     /* --------------------------------- */
 
     .main_store {
-        background: url(/images/main.png);
-        min-height: 340px;
+        background: url(/images/main_find_store_bg.jpg) no-repeat center center/cover;
     }
 
     .store_wrap {

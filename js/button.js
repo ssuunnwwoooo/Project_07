@@ -22,26 +22,21 @@ $(function () {
         sct > 500 ? $('.to_top').addClass('on') : $('.to_top').removeClass('on');
     });
 
+    // ----------------------------------------
 
     $('.mobile_btn').on('click', function () {
         $('.gnb').toggleClass('on');
     });
 
 
-    $('.gnb>li>a').on('click', function (e) {
+    $('.gnb>ul>li>a').on('click', function (e) {
         if ($('.gnb').hasClass('on')) {
             e.preventDefault();
-            $(this)
-                .next()
-                .stop()
-                .slideToggle();
-            $(this)
-                .parent()
-                .siblings()
-                .find('.sub')
-                .stop()
-                .slideUp();
-        }
+        };
+
+        $(this).next().stop().slideDown();
+        $(this).parent().siblings().find('.sub').stop().slideUp();
+
     });
 
 
