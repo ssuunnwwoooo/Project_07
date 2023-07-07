@@ -353,6 +353,7 @@
 .main_game .game_slide .box h3 {
     font-size: 60px;
     color: #dcba94;
+    margin: 0 0 15px 0;
 }
 
 .main_game .game_slide .box strong {
