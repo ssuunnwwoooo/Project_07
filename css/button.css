@@ -150,12 +150,12 @@
 }
 
 .main_visual .main_slide .itm01 {
-    background: url(/images/MAIN1-scaled.jpg) no-repeat center center/cover;
+    background: url(../images/MAIN1-scaled.jpg) no-repeat center center/cover;
 
 }
 
 .main_visual .main_slide .itm02 {
-    background: url(/images/MAIN2.jpg) no-repeat center center/cover;
+    background: url(../images/MAIN2.jpg) no-repeat center center/cover;
 }
 
 
@@ -207,7 +207,7 @@
 
 
 .post_list {
-    background: #e7d7ca url(/images/main_bg_store.jpg) no-repeat right;
+    background: #e7d7ca url(../images/main_bg_store.jpg) no-repeat right;
 }
 
 .post_list .post_wrap {
@@ -379,11 +379,11 @@
 }
 
 .main_game .game_slide .box01 {
-    background: url(/images/game01.jpg) no-repeat center center/cover;
+    background: url(../images/game01.jpg) no-repeat center center/cover;
 }
 
 .main_game .game_slide .box02 {
-    background: url(/images/game02.jpg) no-repeat center center/cover;
+    background: url(../images/game02.jpg) no-repeat center center/cover;
 }
 
 /* ----------------------------------------------- */
@@ -434,7 +434,7 @@
 /* --------------------------------- */
 
 .main_store {
-    background: url(/images/main.png);
+    background: url(../images/main.png);
     height: 500px;
 }
 
@@ -687,12 +687,12 @@
     }
 
     .main_visual .main_slide .itm01 {
-        background: url(/images/main_slide-1.jpg) no-repeat center center/cover;
+        background: url(../images/main_slide-1.jpg) no-repeat center center/cover;
         height: 100vh;
     }
 
     .main_visual .main_slide .itm02 {
-        background: url(/images/main_slide-2.jpg) no-repeat center center/cover;
+        background: url(../images/main_slide-2.jpg) no-repeat center center/cover;
         height: 100vh;
     }
 
@@ -711,7 +711,7 @@
 
 
     .post_list {
-        background: url(/images/main_store_bg.jpg) no-repeat center center/cover
+        background: url(../images/main_store_bg.jpg) no-repeat center center/cover
     }
 
     .post_list .post_wrap {
@@ -791,11 +791,11 @@
     }
 
     .main_game .game_slide .box01 {
-        background: url(/images/mobile_game01.jpg) no-repeat center center/cover;
+        background: url(../images/mobile_game01.jpg) no-repeat center center/cover;
     }
 
     .main_game .game_slide .box02 {
-        background: url(/images/mobile_game02.jpg) no-repeat center center/cover;
+        background: url(../images/mobile_game02.jpg) no-repeat center center/cover;
     }
 
     /* 
@@ -890,7 +890,7 @@
     /* --------------------------------- */
 
     .main_store {
-        background: url(/images/main_find_store_bg.jpg) no-repeat center center/cover;
+        background: url(../images/main_find_store_bg.jpg) no-repeat center center/cover;
     }
 
     .store_wrap {
