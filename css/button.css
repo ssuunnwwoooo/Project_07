@@ -48,14 +48,17 @@
     width: 100%;
     background: #3d3735;
     z-index: 999;
-    height: 200px;
+    height: 0;
 
     opacity: 0;
+    visibility: hidden;
     transition: 0.5s;
 }
 
 .header .gnb:hover::before {
+    height: 200px;
     opacity: 1;
+    visibility: visible;
 }
 
 .header .gnb>ul {
@@ -91,9 +94,11 @@
     font-weight: 300;
 
     color: rgba(221, 221, 221, 0.644);
+    visibility: hidden;
 }
 
 .header .gnb:hover>ul>li .sub {
+    visibility: visible;
     opacity: 1;
 }
 
